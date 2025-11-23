@@ -7,92 +7,99 @@ All colors MUST be HSL.
 */
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 203 62% 21%;
-    
-    --card: 0 0% 100%;
-    --card-foreground: 203 62% 21%;
-    
-    --popover: 0 0% 100%;
-    --popover-foreground: 203 62% 21%;
-    
-    --primary: 88 41% 53%;
-    --primary-foreground: 0 0% 100%;
-    
-    --secondary: 203 62% 21%;
-    --secondary-foreground: 0 0% 100%;
-    
-    --muted: 210 40% 96%;
-    --muted-foreground: 203 30% 45%;
-    
-    --accent: 88 41% 53%;
-    --accent-foreground: 0 0% 100%;
-    
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
-    
-    --border: 210 40% 90%;
-    --input: 210 40% 90%;
-    --ring: 88 41% 53%;
-    
-    --radius: 1rem;
-    
-    /* Custom colors for the platform */
-    --playful-green: 88 41% 53%;
-    --deep-navy: 203 62% 21%;
-    --light-bg: 210 40% 98%;
-    --success-green: 88 50% 45%;
-  }
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 203 62% 21%;
+
+        --card: 0 0% 100%;
+        --card-foreground: 203 62% 21%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 203 62% 21%;
+
+        --primary: 88 41% 53%;
+        --primary-foreground: 0 0% 100%;
+
+        --secondary: 215 96% 29%;
+        --secondary-foreground: 0 0% 100%;
+
+        --muted: 210 40% 96%;
+        --muted-foreground: 203 30% 45%;
+
+        --accent: 88 41% 53%;
+        --accent-foreground: 0 0% 100%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 100%;
+
+        --border: 210 40% 90%;
+        --input: 210 40% 90%;
+        --ring: 88 41% 53%;
+
+        --radius: 1rem;
+
+        /* Custom colors for the platform */
+        --playful-green: 88 41% 53%;
+        --deep-navy: 203 62% 21%;
+        --light-bg: 210 40% 98%;
+        --success-green: 88 50% 45%;
+    }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+    * {
+        @apply border-border;
+    }
 
-  body {
-    @apply bg-background text-foreground;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply text-secondary;
-  }
+    body {
+        @apply bg-background text-foreground;
+        font-family: "Poppins", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply text-secondary;
+    }
 }
 
 @layer utilities {
-  .text-gradient {
-    @apply bg-gradient-to-r from-primary to-success-green bg-clip-text text-transparent;
-  }
-  
-  .hover-lift {
-    @apply transition-transform duration-300 hover:-translate-y-2;
-  }
-  
-  .bounce-subtle {
-    animation: bounce-subtle 2s ease-in-out infinite;
-  }
-  
-  @keyframes bounce-subtle {
-    0%, 100% {
-      transform: translateY(0);
+    .text-gradient {
+        @apply bg-gradient-to-r from-primary to-success-green bg-clip-text text-transparent;
     }
-    50% {
-      transform: translateY(-10px);
+
+    .hover-lift {
+        @apply transition-transform duration-300 hover:-translate-y-2;
     }
-  }
-  
-  .float {
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0) rotate(0deg);
+
+    .bounce-subtle {
+        animation: bounce-subtle 2s ease-in-out infinite;
     }
-    50% {
-      transform: translateY(-20px) rotate(3deg);
+
+    @keyframes bounce-subtle {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
     }
-  }
+
+    .float {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0%,
+        100% {
+            transform: translateY(0) rotate(0deg);
+        }
+        50% {
+            transform: translateY(-20px) rotate(3deg);
+        }
+    }
 }
