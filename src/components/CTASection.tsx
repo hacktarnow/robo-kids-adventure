@@ -9,10 +9,10 @@ const CTASection = () => {
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
 
             <div className="container mx-auto px-4 relative z-10">
-                <div className="max-w-4xl mx-auto text-center space-y-8">
+                <div className="max-w-5xl mx-auto text-center space-y-8">
                     <h2 className="text-4xl md:text-6xl font-bold leading-tight text-primary-foreground">
-                        Rozpocznij Przygodę z Robotyką i Programowaniem Już
-                        Dziś!
+                        Rozpocznij przygodę z robotyką <br /> i programowaniem
+                        już dziś!
                     </h2>
 
                     <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">

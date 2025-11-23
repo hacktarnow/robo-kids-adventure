@@ -5,19 +5,22 @@
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
+/* primary: 12 74% 54%; */
+/* secondary: 217 42% 28%; */
+/* accent: 30 64% 53%; */
 
 @layer base {
     :root {
         --background: 0 0% 100%;
-        --foreground: 203 62% 21%;
+        --foreground: 217 42% 28%;
 
         --card: 0 0% 100%;
-        --card-foreground: 203 62% 21%;
+        --card-foreground: 217 42% 28%;
 
         --popover: 0 0% 100%;
-        --popover-foreground: 203 62% 21%;
+        --popover-foreground: 217 42% 28%;
 
-        --primary: 88 41% 53%;
+        --primary: 12 74% 54%;
         --primary-foreground: 0 0% 100%;
 
         --secondary: 215 96% 29%;
@@ -26,7 +29,7 @@ All colors MUST be HSL.
         --muted: 210 40% 96%;
         --muted-foreground: 203 30% 45%;
 
-        --accent: 88 41% 53%;
+        --accent: 12 74% 54%;
         --accent-foreground: 0 0% 100%;
 
         --destructive: 0 84.2% 60.2%;
@@ -34,15 +37,15 @@ All colors MUST be HSL.
 
         --border: 210 40% 90%;
         --input: 210 40% 90%;
-        --ring: 88 41% 53%;
+        --ring: 12 74% 54%;
 
         --radius: 1rem;
 
         /* Custom colors for the platform */
-        --playful-green: 88 41% 53%;
-        --deep-navy: 203 62% 21%;
+        --playful-green: 12 74% 54%;
+        --deep-navy: 217 42% 28%;
         --light-bg: 210 40% 98%;
-        --success-green: 88 50% 45%;
+        --success-green: 30 64% 53%;
     }
 }
 

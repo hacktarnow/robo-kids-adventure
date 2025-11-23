@@ -7,8 +7,14 @@ const Footer = () => {
                 <div className="grid md:grid-cols-4 gap-8 mb-8">
                     {/* Brand */}
                     <div className="space-y-4">
+                        <img
+                            src="./logo-white.png"
+                            alt="Edu Tech Polska Logo"
+                            width={96}
+                            height={96}
+                        />
                         <h3 className="text-2xl font-bold text-white">
-                            RoboKids
+                            Edu Tech Polska
                         </h3>
                         <p className="text-sm opacity-80">
                             Gamifikowana platforma edukacyjna dla młodych
@@ -128,10 +134,10 @@ const Footer = () => {
                             <li className="flex items-center gap-2">
                                 <Mail className="w-4 h-4" />
                                 <a
-                                    href="mailto:kontakt@robokids.pl"
+                                    href="mailto:kontakt@EduTechPolska.pl"
                                     className="hover:text-primary transition-colors"
                                 >
-                                    kontakt@robokids.pl
+                                    kontakt@EduTechPolska.pl
                                 </a>
                             </li>
                             <li className="flex items-center gap-2">
@@ -150,8 +156,8 @@ const Footer = () => {
                 {/* Bottom bar */}
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-80">
                     <p>
-                        © {new Date().getFullYear()} RoboKids. Wszelkie prawa
-                        zastrzeżone.
+                        © {new Date().getFullYear()} Edu Tech Polska. Wszelkie
+                        prawa zastrzeżone.
                     </p>
                     <div className="flex gap-6">
                         <a
